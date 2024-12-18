@@ -1,23 +1,42 @@
+/* Center the page content */
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
+/* Add spacing and layout for the starship list */
 .starship-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
+/* Improve the card design */
 .starship-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem;
-  background-color: #f4f4f4;
-  width: 200px;
-  text-align: center;
+  background-color: #2f4f4f;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+/* Add hover effect to the cards */
+.starship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve title styling */
 h1 {
-  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2f4f4f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }

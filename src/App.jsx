@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAllStarships } from "../services/SwApi"; // Corrected import path
 import StarShipCard from "./components/StarShipCard";
+import "./App.css";
 
 function App() {
   const [starships, setStarships] = useState([]); // State to hold starship data
